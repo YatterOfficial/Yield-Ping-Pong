@@ -132,7 +132,7 @@ Which is where this pattern gets it's name!
 
 This terminology is not intended to be sexist, but is a reflection upon the 'House-Wife' pattern of intersteller communication that was discussed in the 1960s, 70s, and 80s, in which the conundrum about how to best communicate over inter-steller distances was discussed.
 
-The difficulty was that when a radio operator sens a message, he finishes it, says 'over', and it takes years before the receiver, who is light-years away, receives it.
+The difficulty was that when a radio operator sends a message, he finishes it, says 'over', and it takes light-years before the receiver, who is light-years away, receives it. This, of course, is because radio-communication travels at the speed of light, and this problem occurs when communicating distances are light-years apart.
 
 Then the receiver replies, finishing with 'over', and it takes years for the reply to get back.
 
