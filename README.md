@@ -7,8 +7,9 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 
 ## Quickstart
 
-- Use git to clone the repo as follows: ```git clone https://github.com/YatterOfficial/Yield-Ping-Pong.git``` or download the Release zip and expand it.
+- Use git to clone the repo as follows: ```git clone https://github.com/YatterOfficial/Yield-Ping-Pong.git``` or download the [Release zip](https://github.com/YatterOfficial/Yield-Ping-Pong/releases/) and expand it.
 - Familiarise yourself with how yield works, using the console app.
+- Run the console app, first without the illustrated break-points, and then with the illustrated break-points.
 - Notice, in particular how yield works in the methods GetPing() and GetPong(), and from where they are called - these have a parallel pattern in the Server App.
 - Open two command line consoles, side by side, and, changing to the directory that contains the Server's ```Program.cs``` file, start a server in each, by running  one of the following respective commands, in each console:
   - ```dotnet run --urls "http://localhost:5100;https://localhost:5101" --remoteurl "http://localhost:5000/pingpong?name=ping" --whoami "ping" --server ping --reactiontime 500```
@@ -16,6 +17,7 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 - You will see that the game runs in the console that belongs to whichever is designated as the --server, ping or pong
 - The methods that correspond to GetPing() and GetPong() in the console app, are called GetBim() and GetBam(), respectively, in the server app. The reason why they cannot be called GetPing() and GetPong() in the server app, is because it switches around, depending upon who is server.
 - You will, however, see that the yields work just the same as in the Console app, the big difference here is that the --server makes an http call to his opponent, and the yielding response is cleared after each service and response.
+- Although you can't set the same break-points, watch the output but compare it with the parallel break-point marks to the Console app, in the Server's code.
 
 ## Benefits
 
