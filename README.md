@@ -216,19 +216,23 @@ We've just named our house-wife: her name is Stella!
 
 ## Where to now?
 
-The reason why we are giving this project such prominence is because all of the other repos have been made public with the view of enabling third parties to create tools that will allow bespoke content to be uploaded to user's accounts, once the app both becomes public, and we incrementally start making such facilities available.
+The reason why we are giving this project such prominence is because all of the other repos have been made public with the view of enabling third parties to create tools that will allow bespoke content to be uploaded to user's accounts, once the app both becomes public, and we incrementally start making such facilities available. 
 
-Patterns and practices will be the name of that game, and because of that, it's reasonable to assume that we will, in time, be adding more concrete examples of these yield patterns to this repo.
+All of these repos are in their infancy, on which point we are ticket-based, and if one is not advancing as quickly as you might like, it will be because we are prioritising the advancement of other tickets in the meantime.
+
+Patterns and practices will be the name of the game of third-party engagement with us, and because of that, it's reasonable to assume that we will, in time, be adding more concrete examples of these yield patterns to this repo.
 
 Imagine, for example, that you are a local newspaper with an API feed of your newspaper's online news feeds. 
 
-What tools would you need to create so that your own yatter site, under your own username, made your content available to Yatter users you navigate to your y@R site?
+What tools would you need to create so that your own y@R site, under your own username, made your content available to Yatter users who navigate to your y@R site in the Yatter app?
 
 The challenge is this:
 
 - How do you continually stream new content to your site, through our tradesman's entrance, via an api back-door.
-- How do we stream that content from your y@R site, to automatically refresh a user's viewing of one of your y@R pages, whilst they are directly looking at it?
+- How do we stream that content from your y@R site, to automatically refresh a user's viewing of one of your y@R pages via the app front-door, whilst they are directly looking at it?
 
-This article demonstrates how to use the yield keyword to continually stream new artifiacts to our endpoints, as well as we similarly redelivering it from your y@R site, directly to a user's y@R Viewport, on their mobile phone, or computer desktop.
+This article demonstrates how to use the yield keyword to continually stream new artifacts to our endpoints abstractions, as well as we similarly redelivering it from your y@R site, directly to a user's y@R Viewport, on their mobile phone, or computer desktop.
+
+_The chatter's y@R!_
 
 Copyright (C) Anthony Harrison 2021
