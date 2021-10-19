@@ -162,9 +162,9 @@ The difficulty was that when a radio operator sends a message, he finishes it, s
 
 Then the receiver replies, finishing with 'over', and it takes years for the reply to get back.
 
-- Sender: 'Hello Red Leader, Alpha-Centauri Spooning-Satellite-One here, do you receive me?'
+- Sender: 'Hello Red Leader, Alpha-Centauri Spooning-Satellite-One here, do you receive me? Over!'
 - The message takes 4.367 years to arrive at planet earth
-- Receiver: 'Hello Alpha-Centauri, reading you loud and clear, how can I help you?'
+- Receiver: 'Hello Alpha-Centauri, reading you loud and clear, how can I help you? Over!'
 - The message takes 4.367 years to arrive back at Alpha-Centauri Spooning-Satellite-One
 - _... and nothing of substance has been said!_
 
