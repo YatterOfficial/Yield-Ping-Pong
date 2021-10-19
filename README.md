@@ -163,3 +163,5 @@ and
 ```
 
 _Inter-Stella!_, just keep talking, honey!
+
+Copyright (C) Anthony Harrison 2021
