@@ -130,18 +130,36 @@ Which is where this pattern gets it's name!
 
 ## The Historical 'House-Wife' Pattern => 'Yield-House-Wife' Pattern
 
-This terminology is not intended to be sexist, but is a reflection upon the 'House-Wife' pattern of interstella communication that was discussed in the 1960s, 70s, and 80s, in which the conundrum about how to best communicate over inter-stella distances was discussed.
+This terminology is not intended to be sexist, but is a reflection upon the 'House-Wife' pattern of intersteller communication that was discussed in the 1960s, 70s, and 80s, in which the conundrum about how to best communicate over inter-steller distances was discussed.
 
-The difficulty was that when a radio operator sens a message, he finishes it, say's 'over', and it takes years before the receiver, who is light-years away, receives it.
+The difficulty was that when a radio operator sens a message, he finishes it, says 'over', and it takes years before the receiver, who is light-years away, receives it.
 
 Then the receiver replies, finishing with 'over', and it takes years for the reply to get back.
 
 _This delay queues up all the messages, because the sending operator waits for a reply._
 
-The solution was called The Housewife Principle, in which both sides just keeps talking!
+The solution was called ```The Housewife Principle```, in which both sides "just keep talking"! Although an answer to any particular question still takes the same time to be answered, from when asked, the interim silent periods are productively filled with tangential agenda, so that in the extreme, there aren't any silent periods.
 
 How this applies to the Yield-Ping-Pong pattern, is that in the PingPongController, there are two filters, and both are designed so that the game of ping-pong are only conducted under the auspices of the server.
 
 To transform Yield-Ping-Pong into Yield-House-Wife, just comment out the following filters and run both servers again - you will see two games of ping-pong being conducted simultaneously, each under the auspices of two single originators.
+
+Comment out
+
+```
+            if(PingPongTable.Server.Equals("ping"))
+            {
+                return "not a game";
+            }
+```
+
+and
+
+```
+            if(PingPongTable.Server.Equals("pong"))
+            {
+                return "not a game";
+            }
+```
 
 _Inter-Stella!_, just keep talking, honey!
