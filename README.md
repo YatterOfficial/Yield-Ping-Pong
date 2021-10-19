@@ -205,7 +205,7 @@ and
 
 - This, of course, only demonstrates the client's needs ... but Yield-House-Wife pattern also allows the server to drop any new need of it's own into the intervening spaces - for example, it might want to tell the user about a pending service disruption, so Yield-House-Wife pattern allows the server to respond to the client's incidental needs, without the client having to request such incidental information from the server.
 
-And this, solves our Yatter Page updating needs - the client keeps requesting information, the server seeks the new list-itsms but drops anything additional into the feed that it wishes, and similarly the client drops anything additional into the feed that it needs.
+And this, solves our Yatter Page updating needs - the client keeps requesting information, the server seeks the new list-items but drops anything additional into the feed that it wishes, and similarly the client drops anything additional into the feed that it needs.
 
 - This raises an additonal question: If Yield-Ping-Pong pattern deals with pings and pongs, and Yield-Flip-Flop pattern deals with flips and flops, what does Yield-House-Wife pattern deal with?
 - The answer is 'chatter'. And Yatter means chatter, how convenient!
