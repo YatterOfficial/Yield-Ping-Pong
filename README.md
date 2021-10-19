@@ -3,7 +3,7 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 
 - The basic concept is demonstrated in the Console app
 - A fully-fledged example occurs using two instances of the same Server
-- This 'Yield-Ping-Pong' pattern can be used to sequantially retrieve remotely distributed items, for years, using just a single method call.
+- This 'Yield-Ping-Pong' pattern can be used to sequentially retrieve remotely distributed items, for years, using just a single method call.
 
 ## Quickstart
 
