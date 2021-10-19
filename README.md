@@ -147,7 +147,7 @@ How this applies to the Yield-Ping-Pong pattern, is that in the PingPongControll
 
 To transform Yield-Ping-Pong into Yield-House-Wife, just comment out the following filters and run both servers again - you will see two games of ping-pong being conducted simultaneously, each under the auspices of two single originators.
 
-Comment out
+Comment out these filters in both of the opposing contexts:
 
 ```
             if(PingPongTable.Server.Equals("ping"))
