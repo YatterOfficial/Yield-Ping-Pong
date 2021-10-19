@@ -15,7 +15,7 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
   - ```dotnet run --urls "http://localhost:5100;https://localhost:5101" --remoteurl "http://localhost:5000/pingpong?name=ping" --whoami "ping" --server ping --reactiontime 500```
   - ```dotnet run --urls "http://localhost:5000;https://localhost:5001" --remoteurl "http://localhost:5100/pingpong?name=pong" --whoami "pong" --server ping --reactiontime 500```
 - You will see that the game runs in the console that belongs to whichever is designated as the --server, ping or pong, feel free to modify --server and --reactiontime (the latter which is in milliseconds)
-- The methods that correspond to GetPing() and GetPong() in the console app, are called GetBim() and GetBam(), respectively, in the server app. The reason why they cannot be called GetPing() and GetPong() in the server app, is because it switches around, depending upon who is the --server.
+- The methods that correspond to GetPing() and GetPong() in the console app, are called GetBim() and GetBam(), respectively, in the server app. The reason why they cannot be called GetPing() and GetPong() in the server app, is because it switches around, depending upon who is the --server. _By --server, we mean 'who serves, when starting a game of ping-pong'!_
 - You will, however, see that the yields work just the same as in the Console app, the big difference here is that the --server makes an http call to his opponent, and the yielding response is cleared after each service and response.
 - Although you can't set the same break-points, watch the output but compare it with the parallel break-point marks to the Console app, in the Server's code.
 
