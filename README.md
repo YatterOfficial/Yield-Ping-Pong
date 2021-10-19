@@ -136,7 +136,7 @@ The difficulty was that when a radio operator sends a message, he finishes it, s
 
 Then the receiver replies, finishing with 'over', and it takes years for the reply to get back.
 
-_This delay queues up all the messages, because the sending operator waits for a reply._
+_This delay queues up all the messages, because the sending operator waits for a reply before continuing._
 
 The solution was called ```The Housewife Principle```, in which both sides "just keep talking"! Although an answer to any particular question still takes the same time to be answered, from when asked, the interim silent periods are productively filled with tangential agenda, so that in the extreme, there aren't any silent periods.
 
