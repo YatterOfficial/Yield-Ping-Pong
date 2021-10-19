@@ -91,12 +91,12 @@ Console.WriteLine("Starting Game!");
 
 var pong = GetPong().GetAsyncEnumerator();
 
-await foreach(var ping in GetPing())
+await foreach(var ping in GetPing()) /* breakpoint */
 {
     Console.WriteLine(ping);
     await pong.MoveNextAsync();
     Console.WriteLine(pong.Current);
-}
+} /* breakpoint */
 
 Console.ReadLine();
 
@@ -104,7 +104,7 @@ async IAsyncEnumerable<string> GetPing()
 {
     while(true)
     {
-        yield return "ping";
+        yield return "ping"; /* breakpoint */
         await Task.Delay(1000);
     }
 }
@@ -113,7 +113,7 @@ async IAsyncEnumerable<string> GetPong()
 {
     while(true)
     {
-        yield return "pong";
+        yield return "pong"; /* breakpoint */
         await Task.Delay(1000);
     }
 }
