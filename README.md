@@ -162,6 +162,12 @@ The difficulty was that when a radio operator sends a message, he finishes it, s
 
 Then the receiver replies, finishing with 'over', and it takes years for the reply to get back.
 
+- Sender: 'Hello Red Leader, Alpha-Centauri Spooning-Satellite-One here, do you receive me?'
+- The message takes 4.367 years to arrive at planet earth
+- Receiver: 'Hello Alpha-Centauri, reading you loud and clear, how can I help you?'
+- The message takes 4.367 years to arrive back at Alpha-Centauri Spooning-Satellite-One
+- _... and nothing of substance has been said!_
+
 _This delay queues up all the messages, because the sending operator waits for a reply before continuing._
 
 The solution was called ```The Housewife Principle```, in which both sides "just keep talking"! Although an answer to any particular question still takes the same time to be answered, from when asked, the interim silent periods are productively filled with tangential agenda, so that in the extreme, there aren't any silent periods. _Once again, the name 'The House-Wife Principle' isn't meant to be sexist, but is a historical reflection upon the 1960s, 70s, and 80s._ It still makes me laugh, though!
