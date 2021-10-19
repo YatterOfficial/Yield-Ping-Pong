@@ -1,4 +1,4 @@
-# Yield-Ping-Pong
+# The 'Yield-Ping-Pong' Pattern
 Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong between two servers
 
 - The basic concept is demonstrated in the Console app
