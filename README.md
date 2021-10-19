@@ -231,7 +231,7 @@ The challenge is this:
 - How do you continually stream new content to your site, through our tradesman's entrance, via an api back-door.
 - How do we stream that content from your y@R site, to automatically refresh a user's viewing of one of your y@R pages via the app front-door, whilst they are directly looking at it?
 
-This article demonstrates how to use the yield keyword to continually stream new artifacts to our endpoints abstractions, as well as we similarly redelivering it from your y@R site, directly to a user's y@R Viewport, on their mobile phone, or computer desktop.
+This article demonstrates how to use the yield keyword to continually stream new artifacts to endpoint abstractions, as well as we similarly redelivering it from your y@R site, directly to a user's y@R Viewport, on their mobile phone, or computer desktop.
 
 _The chatter's y@R!_
 
