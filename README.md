@@ -30,12 +30,12 @@ The following extract shows that although GetBim() is called once, _ping_ and _p
 ```
          var bam = GetBam().GetAsyncEnumerator();
          
-         await foreach(var bim in GetBim())
+         await foreach(var bim in GetBim()) /* breakpoint */
          {
             Console.WriteLine($"{bim}");
             await bam.MoveNextAsync();
             Console.WriteLine($"{bam.Current}");
-         }
+         } /* breakpoint */
 ```
   
 This is because of how yield works in each of GetBim() and GetBam() in the server's [PingPongTable.cs](https://github.com/YatterOfficial/Yield-Ping-Pong/blob/master/Server/PingPongTable.cs) class:
@@ -57,7 +57,7 @@ This is because of how yield works in each of GetBim() and GetBam() in the serve
          }
          if(HaveResponse)
          {
-            yield return MyName;
+            yield return MyName; /* breakpoint */
          }
 
          await Task.Delay(ReactionTime);
@@ -75,7 +75,7 @@ This is because of how yield works in each of GetBim() and GetBam() in the serve
             Response = string.Empty;
             if(returnResponse.Equals("ping")||returnResponse.Equals("pong"))
             {
-               yield return returnResponse;
+               yield return returnResponse; /* breakpoint */
             }
          }
          await Task.Delay(ReactionTime);
@@ -118,4 +118,8 @@ async IAsyncEnumerable<string> GetPong()
 }
 ```
 
+## Break-Point Heaven => 'Yield-Ping-Pong' Pattern Name
 
+To truly understand what is happening, put a breakpoint on the four lines of code marked as break-points in either the Console app or the Server app, and you will see 'ping' and 'pong' in action!
+
+Which is where this pattern gets it's name!
