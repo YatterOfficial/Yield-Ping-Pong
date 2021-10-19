@@ -83,7 +83,7 @@ This is because of how yielkd works in each of GetBim() and GetBam():
    }
 ```
 
-A simplified example is illiustrated in the console app:
+A simplified example is illiustrated in the [console app](https://github.com/YatterOfficial/Yield-Ping-Pong/blob/master/ConsoleApp/Program.cs):
 
 ```
 Console.WriteLine("Starting Game!");
