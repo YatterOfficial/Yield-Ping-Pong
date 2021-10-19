@@ -152,7 +152,7 @@ But seriously:
 - If the oscillation has a remote end-point, it's ping-pong
 - If the oscillation occurs locally, it's flip-flop
 - Which shows that the console app demo is actually Yield-Flip-Flop pattern, and the Server demo is actually Yield-Ping-Pong pattern
-- This is not just a whim, it came about because I have to design the architecture of how to update list-items in a local Yatter page, from a remote source: the remote-sourcing of an unknown quantity of new list-items will be done using Yield-Ping-Pong pattern, and yet once a single item is received locally in the midst of an unknown stream-length of items, it will be placed in the local Yatter page using Yield-Flip-Flop pattern
+- This is not just a whim, it came about because I have to design the architecture of how to update list-items in a local Yatter page, from a remote source: the remote-sourcing of an unknown quantity of new list-items will be done using Yield-Ping-Pong pattern (or more-likely the new pattern that is mentioned in the next section), and yet once a single item is received locally in the midst of an unknown stream-length of items, it will be placed in the local Yatter page using Yield-Flip-Flop pattern
 - It was a bit of a brain-freeze until this became clear, such are the demands of solution architecture
 
 ## The Historical 'House-Wife' Pattern => 'Yield-House-Wife' Pattern
