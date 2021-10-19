@@ -129,7 +129,25 @@ async IAsyncEnumerable<string> GetPong()
 
 To truly understand what is happening, put a breakpoint on the four lines of code marked as break-points in either the Console app or the Server app, and you will see 'ping' and 'pong' in action!
 
+- GetBim() only gets called once
+- The end of GetBim()'s foreach loop gets called every time
+- bim and bam oscillate
+
+So now, remove the first two break-points and just leave the break-points on bim and bam:
+
+- bim and bam oscillate, forever returning ping and pong.
+
 Which is where this pattern gets it's name!
+
+Could'a called it Yield-Flip-Flop, but what would have been the fun in that! 
+
+But seriously:
+
+- If the oscillation has a remote end-point, it's ping-pong
+- If the oscillation occurs locally, it's flip-flop
+- Which shows that the console app demo is actually Yield-Flip-Flop pattern, and the Server demo is actually Yield-Ping-Pong pattern
+- This is not just a whim, it came about because I have to design the architecture of how to update list-items in a local Yatter page, from a remote source: the remote-sourcing of an unknown quantity of new list-items will be done using Yield-Ping-Pong pattern, and yet once a single item is received locally in the midst of an unknown stream-length of items, it will be placed in the local Yatter page using Yield-Flip-Flop pattern
+- It was a bit of a brain-freeze until this became clear, such are the demands of solution architecture
 
 ## The Historical 'House-Wife' Pattern => 'Yield-House-Wife' Pattern
 
