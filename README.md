@@ -43,7 +43,9 @@ The following extract shows that although GetBim() is called once, _ping_ and _p
          } /* breakpoint */
 ```
   
-This is because of how yield works in each of GetBim() and GetBam() in the server's [PingPongTable.cs](https://github.com/YatterOfficial/Yield-Ping-Pong/blob/master/Server/PingPongTable.cs) class:
+This is because of how yield works in each of GetBim() and GetBam() in the server's [PingPongTable.cs](https://github.com/YatterOfficial/Yield-Ping-Pong/blob/master/Server/PingPongTable.cs) class.
+
+Although tangential, the responses to the HttpClient's url calls (the pings and pongs, whether bims or bams), are handled in the [PingPongController](https://github.com/YatterOfficial/Yield-Ping-Pong/blob/master/Server/Controllers/PingPongController.cs).
 
 ```
    async static IAsyncEnumerable<string> GetBim()
