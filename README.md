@@ -4,7 +4,7 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 - The basic concept is demonstrated in the Console app
 - A fully-fledged example occurs using two instances of the same Server
 - This 'Yield-Ping-Pong' pattern can be used to sequentially retrieve remotely distributed items, for years, using just a single method call, **once**.
-- 'Yield-Ping-Pong' pattern is easily transformed into 'Yield-House-Wife' pattern, whose name is not intended to be sexist but is a reflection upon the 1960s, 70s, and 80s, aclaimed method of solving the Conundrum of Intersteller Communication, in which radio operators are light-years apart.
+- 'Yield-Ping-Pong' pattern is easily transformed into 'Yield-House-Wife' pattern, whose name is not intended to be sexist but is a reflection upon the 1960s, 70s, and 80s, acclaimed method of solving the Conundrum of Intersteller Communication, in which radio operators are light-years apart.
 
 ## Quickstart
 
