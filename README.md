@@ -14,3 +14,11 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 - You will see that the game runs in the console that belongs to whichever is designated as the --server, ping or pong
 - The methods that correspond to GetPing() and GetPong() in the console app, are called GetBim() and GetBam(), respectively. The reason why they cannot be called GetPing() and GetPong(), is that it switches around, depending upon who is server.
 - You will, however, see that the yields work just the same as in the Console app, the big difference here is that the --server makes an http call to his opponent, and the yielding response is cleared after each service and response.
+
+## Benefits
+
+This fully asynchronous, remotely distributed system, illustrates that instead of creating a List<CustomObject> and managing that, that instead, by creating an  IEnumerableAsync<CustomObject> allows the remote management of single items that ultimately constitute a list, instead of having to retrieve the whole list first.
+  
+Here, the remote system happens to be a server, however it could just as easily have been retrieving a series of items on a queue in the cloud, or merely scraping a series of webpages.
+  
+
