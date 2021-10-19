@@ -23,7 +23,7 @@ Here, the remote system happens to be a server, however it could just as easily 
 
 In essence a call is made to retrieve a list, and yet each item is retrieved individually but acted upon sequentially.
 
-The following extract shows that although GetBin() is called once, _ping_ and _pong_ continue to be exposed using the variables _bim_ and _bam_, one by one, and can continue to be exposed one-by-one for weeks, even years, without GetBin() having to be called again.
+The following extract shows that although GetBim() is called once, _ping_ and _pong_ continue to be exposed using the variables _bim_ and _bam_, one by one, and can continue to be exposed one-by-one for weeks, even years, without GetBim() having to be called again.
 
 That's one hell-of-a big 'get list' coming in sequentially, one by one!
 
@@ -38,7 +38,7 @@ That's one hell-of-a big 'get list' coming in sequentially, one by one!
          }
 ```
   
-This is because of how yielkd works in each of GetBim() and GetBam():
+This is because of how yield works in each of GetBim() and GetBam() in the server's [PingPongTable.cs](https://github.com/YatterOfficial/Yield-Ping-Pong/blob/master/Server/PingPongTable.cs) class:
 
 ```
    async static IAsyncEnumerable<string> GetBim()
