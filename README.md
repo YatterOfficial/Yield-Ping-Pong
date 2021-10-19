@@ -21,6 +21,19 @@ This fully asynchronous, remotely distributed system, illustrates that instead o
   
 Here, the remote system happens to be a server, however it could just as easily have been retrieving a series of items on a queue in the cloud, or merely scraping a series of webpages.
 
-In essence a call is made to retrieve a list, and yet each item is retrieved individually but acted upon sequentially,  
+In essence a call is made to retrieve a list, and yet each item is retrieved individually but acted upon sequentially.
+
+The following extract shows that although GetBin() is called once, ping, and pong, continue to be exposed using the variables bim and bam, one by one, and can continue to be exposed for weeks, even years.
+
+That's one hell-of-a big 'get list' coming in sequentially, one by one!
+
+```
+         await foreach(var bim in GetBim())
+         {
+            Console.WriteLine($"{bim}");
+            await bam.MoveNextAsync();
+            Console.WriteLine($"{bam.Current}");
+         }
+```
   
 
