@@ -136,8 +136,9 @@ To truly understand what is happening, put a breakpoint on the four lines of cod
 So now, remove the first two break-points and just leave the break-points on bim and bam:
 
 - bim and bam oscillate, forever returning ping and pong.
+- GetBim()'s foreach loop is merely the table upon which both ping and pong bounce
 
-Which is where this pattern gets it's name!
+_Which is where this pattern gets it's name!_
 
 Could'a called it Yield-Flip-Flop, but what would have been the fun in that! 
 
