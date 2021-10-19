@@ -7,7 +7,7 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 
 ## Quickstart
 
-- Use git to clone the repo as follows: 
+- Use git to clone the repo as follows: ```git clone https://github.com/YatterOfficial/Yield-Ping-Pong.git``` or download the Release zip and expand it.
 - Familiarise yourself with how yield works, using the console app.
 - Notice, in particular how yield works in the methods GetPing() and GetPong(), and from where they are called - these have a parallel pattern in the Server App.
 - Open two command line consoles, side by side, and, changing to the directory that contains the Server's ```Program.cs``` file, start a server in each, by running  one of the following respective commands, in each console:
