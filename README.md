@@ -212,6 +212,6 @@ And this, solves our Yatter Page updating needs - the client keeps requesting in
 
 _Inter-Stella!_, just keep talking, honey!
 
-We've just named our house-wife - her name is Stella!
+We've just named our house-wife: her name is Stella!
 
 Copyright (C) Anthony Harrison 2021
