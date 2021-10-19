@@ -28,6 +28,8 @@ The following extract shows that although GetBin() is called once, _ping_ and _p
 That's one hell-of-a big 'get list' coming in sequentially, one by one!
 
 ```
+         var bam = GetBam().GetAsyncEnumerator();
+         
          await foreach(var bim in GetBim())
          {
             Console.WriteLine($"{bim}");
