@@ -1,0 +1,10 @@
+# Yield-Ping-Pong
+Demonstrating the advantages of the keyword 'yield' in a game of ping-pong between two servers
+
+## Quickstart
+
+- Familiarise yourself with how yield works, using the console app.
+- Notice, in particular the methods GetPing() and GetPong(), these have a parallel in the Server App.
+- Open two command line boxes, side by side, and in the directory containing the Server Program.cs file, run one of the following commands in each console:
+  - ```dotnet run --urls "http://localhost:5100;https://localhost:5101" --remoteurl "http://localhost:5000/pingpong?name=ping" --whoami "ping" --server ping --reactiontime 500```
+  - ```dotnet run --urls "http://localhost:5000;https://localhost:5001" --remoteurl "http://localhost:5100/pingpong?name=pong" --whoami "pong" --server ping --reactiontime 500```
