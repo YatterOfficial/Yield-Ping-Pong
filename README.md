@@ -203,7 +203,7 @@ and
 
 **So it would be better for a client to continually stream it's requests over SignalR using Yield-House-Wife pattern, and to use Yield-Flip-Flop pattern locally to distribute the answers!**
 
-- This, of course, only demonstrates the client's needs ... but Yield-House-Wife pattern also allows the server to drop any new need of it's own into the intervening spaces - for example, it might want to tell the user about a pending service disruption, so Yield-House-Wife pattern allows the client to respond to the server, without the client having to request such information from the server.
+- This, of course, only demonstrates the client's needs ... but Yield-House-Wife pattern also allows the server to drop any new need of it's own into the intervening spaces - for example, it might want to tell the user about a pending service disruption, so Yield-House-Wife pattern allows the server to respond to the client's incidental needs, without the client having to request such incidental information from the server.
 
 And this, solves our Yatter Page updating needs - the client keeps requesting information, the server seeks the new list-itsms but drops anything additional into the feed that it wishes, and similarly the client drops anything additional into the feed that it needs.
 
