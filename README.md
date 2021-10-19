@@ -9,6 +9,7 @@ Here we demonstrate the advantages of the C# keyword 'yield' in a game of ping-p
 - This 'Yield-Ping-Pong' pattern can be used to sequentially retrieve remotely distributed items, for years, using just a single method call, **once**.
 - 'Yield-Ping-Pong' pattern is easily transformed into 'Yield-House-Wife' pattern, whose name is not intended to be sexist but is a reflection upon the 1960s, 70s, and 80s, acclaimed method of solving the Conundrum of Intersteller Communication, in which radio operators are light-years apart, hence messages that are sent, take light years to be received, and then take further light years for the answer to return to the original operator who asked the question.
 - Towards the end, we point out that where the oscillation between ping and pong happens remotely, it's Yield-Ping-Pong pattern, and where the oscillation happens locally, it's called Yield-Flip-Flop pattern.
+- We then apply this to a SignalR abstraction, demonstrating how each of these patterns have their uses.
 
 ## Quickstart (either read-about-it, or do-it)
 
