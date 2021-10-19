@@ -188,8 +188,8 @@ and
             }
 ```
 
-- To abstract Yield-Housewife-Pattern into a metaphor of usefulness, imagine a client with a SignalR connection to a remote server.
-- If the client has a need, sends it to the remote server, and waits for the response before sending it's next need, then the client is interacting with the server using Yield-Ping-Pong pattern.
+- To abstract Yield-House-Wife pattern into a metaphor of usefulness, imagine a client with a SignalR connection to a remote server.
+- If the client has a need, it sends it to the remote server, and waits for the response before sending it's next need; in such a case, the client is interacting with the server using Yield-Ping-Pong pattern.
 - But who knows how long it will take the remote server to return it's answer? Instead, why not use Yield-House-Wife pattern to fill the intervening spaces with tangential communication!
 
 **So it would be better for a client to continually stream it's requests over SignalR using Yield-House-Wife pattern, and to use Yield-Flip-Flop pattern locally to distribute the answers!**
