@@ -138,7 +138,7 @@ Then the receiver replies, finishing with 'over', and it takes years for the rep
 
 _This delay queues up all the messages, because the sending operator waits for a reply before continuing._
 
-The solution was called ```The Housewife Principle```, in which both sides "just keep talking"! Although an answer to any particular question still takes the same time to be answered, from when asked, the interim silent periods are productively filled with tangential agenda, so that in the extreme, there aren't any silent periods.
+The solution was called ```The Housewife Principle```, in which both sides "just keep talking"! Although an answer to any particular question still takes the same time to be answered, from when asked, the interim silent periods are productively filled with tangential agenda, so that in the extreme, there aren't any silent periods. _Once again, the name 'The House-Wife Principle' isn't meant to be sexist, but is a historical reflection upon the 1960s, 70s, and 80s._ It still makes me laugh, though!
 
 How this applies to the Yield-Ping-Pong pattern, is that in the PingPongController, there are two filters, and both are designed so that the game of ping-pong are only conducted under the auspices of the server.
 
