@@ -25,7 +25,7 @@ In essence a call is made to retrieve a list, and yet each item is retrieved ind
 
 The following extract shows that although GetBim() is called once, _ping_ and _pong_ continue to be exposed using the variables _bim_ and _bam_, one by one, and can continue to be exposed one-by-one for weeks, even years, without GetBim() having to be called again.
 
-That's one hell-of-a big 'get list' coming in sequentially, one by one, and if you put a break-point on GetBim(), you will see that it is only called once!
+- That's one hell-of-a big 'get list' coming in sequentially, one by one, and if you put a break-point on GetBim(), you will see that it is only called once!
 
 ```
          var bam = GetBam().GetAsyncEnumerator();
