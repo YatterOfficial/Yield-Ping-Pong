@@ -17,7 +17,7 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 
 ## Benefits
 
-This fully asynchronous, remotely distributed system, illustrates that instead of creating a List&lt;CustomObject&gt; and managing that, that instead, by creating a 'list' of IEnumerableAsync&lt;CustomObject&gt; in the asynchronous version of the familiar IEnumerable<CustomObject> pattern - and using the keyword  ```yield``` in the method-call in front of where the individual 'list=items' are created, then the remote management of single items that ultimately constitute a list, yet are yielded sequentially, one by one, instead of being returned corporately, prevents the overhead of having to retrieve the whole list first.
+This fully asynchronous, remotely distributed system, illustrates that instead of creating a List&lt;CustomObject&gt; and managing that, that instead, by creating a 'list' of IEnumerableAsync&lt;CustomObject&gt; in the asynchronous version of the familiar IEnumerable&lt;CustomObject&gt; pattern - and using the keyword  ```yield``` in the method-call in front of where the individual 'list=items' are created, then the remote management of single items that ultimately constitute a list, yet are yielded sequentially, one by one, instead of being returned corporately, prevents the overhead of having to retrieve the whole list first.
   
 Here, the remote system happens to be a server, however it could just as easily have been retrieving a series of items on a queue in the cloud, or merely scraping a series of webpages.
 
