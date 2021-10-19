@@ -20,7 +20,7 @@ Demonstrating the advantages of the C# keyword 'yield' in a game of ping-pong be
 - You will, however, see that the yields work just the same as in the Console app, the big difference here is that the --server makes an http call to his opponent, and the yielding response is cleared after each service and response.
 - Although you can't set the same break-points, watch the output but compare it with the parallel break-point marks to the Console app, in the Server's code.
 
-## Benefits
+## Discussion
 
 This fully asynchronous, remotely distributed system, illustrates that instead of creating a List&lt;CustomObject&gt; and managing that, that instead, by creating a 'list' of IEnumerableAsync&lt;CustomObject&gt; in the asynchronous version of the familiar IEnumerable&lt;CustomObject&gt; pattern - and using the keyword  ```yield``` in the method-call in front of where the individual 'list-items' are created, then the remote management of single items that ultimately constitute a list, yet are yielded sequentially, one by one, instead of being returned corporately, prevents the overhead of having to retrieve the whole list first.
   
