@@ -38,4 +38,53 @@ That's one hell-of-a big 'get list' coming in sequentially, one by one!
          }
 ```
   
+This is because of how yielkd works in each of GetBim() and GetBam():
+
+```
+   async static IAsyncEnumerable<string> GetBim()
+   {
+      while(true)
+      {
+         using(var client = new HttpClient())
+         {
+            try
+            {
+               var response = await client.GetStringAsync(OpponentUrl);
+               HaveResponse = true;
+               Response = response;
+            }
+            catch(Exception ex){} // wait for other side to boot up
+         }
+         if(HaveResponse)
+         {
+            yield return MyName;
+         }
+
+         await Task.Delay(ReactionTime);
+      }
+   }
+
+   async static IAsyncEnumerable<string> GetBam()
+   {
+      while(true)
+      {
+         if(HaveResponse)
+         {
+            string returnResponse = Response;
+            HaveResponse = false;
+            Response = string.Empty;
+            if(returnResponse.Equals("ping")||returnResponse.Equals("pong"))
+            {
+               yield return returnResponse;
+            }
+         }
+         await Task.Delay(ReactionTime);
+      }
+   }
+```
+
+A simplified example is illiustrated in the console app:
+
+
+
 
